@@ -1,80 +1,48 @@
-PS C:\Users\user\a\git_tutorial> cd ..
-PS C:\Users\user\a> cd ..
 PS C:\Users\user> mkdir git_challenge
 
 
     ディレクトリ: C:\Users\user
 
 
-Mode                 LastWriteTime         Length Name                                                     
-----                 -------------         ------ ----                                                     
-d-----        2026/06/28     13:42                git_challenge                                            
+Mode                 LastWriteTime         Length Name                                                      
+----                 -------------         ------ ----                                                      
+d-----        2026/06/28     14:52                git_challenge                                             
 
 
 PS C:\Users\user> cd git_challenge
+PS C:\Users\user\git_challenge> git init
+Initialized empty Git repository in C:/Users/user/git_challenge/.git/
 PS C:\Users\user\git_challenge> ni hello_world.txt
 
 
     ディレクトリ: C:\Users\user\git_challenge
 
 
-Mode                 LastWriteTime         Length Name                                                     
-----                 -------------         ------ ----                                                     
--a----        2026/06/28     13:44              0 hello_world.txt                                          
+Mode                 LastWriteTime         Length Name                                                      
+----                 -------------         ------ ----                                                      
+-a----        2026/06/28     14:53              0 hello_world.txt                                           
 
 
-PS C:\Users\user\git_challenge> git add C:\Users\uer\git_challege\hello_world.txt
-fatal: not a git repository (or any of the parent directories): .git
-PS C:\Users\user\git_challenge> git init
-Initialized empty Git repository in C:/Users/user/git_challenge/.git/
-PS C:\Users\user\git_challenge> git add  C:\Users\uer\git_challege\hello_world.txt
-fatal: Invalid path 'C:/Users/uer': No such file or directory
+PS C:\Users\user\git_challenge> echo "Hello, world!" >> hello_world.txt
 PS C:\Users\user\git_challenge> git add C:/Users/user/git_challenge/hello_world.txt
 PS C:\Users\user\git_challenge> git commit -m "最初のコミット"
-[main (root-commit) cfdf4bf] 最初のコミット
- 1 file changed, 1 insertion(+)
+[main (root-commit) d678ce4] 最初のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
-PS C:\Users\user\git_challenge> git status
-On branch main
-nothing to commit, working tree clean
+PS C:\Users\user\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
 PS C:\Users\user\git_challenge> git add C:/Users/user/git_challenge/hello_world.txt
 PS C:\Users\user\git_challenge> git commit -m "2回目のコミット"
-[main 69050e9] 2回目のコミット
- 1 file changed, 2 insertions(+), 1 deletion(-)
+[main c6ffaf8] 2回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
 PS C:\Users\user\git_challenge> git log
-commit 69050e9f8b5a883920c0e5888152f9be4b66418f (HEAD -> main)
+commit c6ffaf8aa0c2af1b0fd10e3523161c44094ea622 (HEAD -> main)
 Author: gh-20program26 <uu4883765@gmail.com>
-Date:   Sun Jun 28 13:55:01 2026 +0900
+Date:   Sun Jun 28 14:59:12 2026 +0900
 
     2回目のコミット
 
-commit cfdf4bfec51e0786823aaff0f5e59e988c3fd721
+commit d678ce4a18c85f004fb50d2a2390b106f0ee9f66
 Author: gh-20program26 <uu4883765@gmail.com>
-Date:   Sun Jun 28 13:52:38 2026 +0900
+Date:   Sun Jun 28 14:56:40 2026 +0900
 
     最初のコミット
-PS C:\Users\user\git_challenge> cd ..
-PS C:\Users\user> mkdir kadai_005
-
-
-    ディレクトリ: C:\Users\user
-
-
-Mode                 LastWriteTime         Length Name                                                     
-----                 -------------         ------ ----                                                     
-d-----        2026/06/28     13:56                kadai_005                                                
-
-
-PS C:\Users\user> cd ..
-PS C:\Users> cd user
-PS C:\Users\user> cd kadai_005
-PS C:\Users\user\kadai_005> ni kadai_005.txt
-
-
-    ディレクトリ: C:\Users\user\kadai_005
-
-
-Mode                 LastWriteTime         Length Name                                                     
-----                 -------------         ------ ----                                                     
--a----        2026/06/28     13:58              0 kadai_005.txt                                            
-
