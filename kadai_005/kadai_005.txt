@@ -4,9 +4,9 @@ PS C:\Users\user> mkdir git_challenge
     ディレクトリ: C:\Users\user
 
 
-Mode                 LastWriteTime         Length Name                                                                                                   
-----                 -------------         ------ ----                                                                                                   
-d-----        2026/06/28     15:27                git_challenge                                                                                          
+Mode                 LastWriteTime         Length Name                                                                             
+----                 -------------         ------ ----                                                                             
+d-----        2026/06/28     15:43                git_challenge                                                                    
 
 
 PS C:\Users\user> cd git_challenge
@@ -18,29 +18,27 @@ PS C:\Users\user\git_challenge> ni hello_world.txt
     ディレクトリ: C:\Users\user\git_challenge
 
 
-Mode                 LastWriteTime         Length Name                                                                                                   
-----                 -------------         ------ ----                                                                                                   
--a----        2026/06/28     15:29              0 hello_world.txt                                                                                        
+Mode                 LastWriteTime         Length Name                                                                             
+----                 -------------         ------ ----                                                                             
+-a----        2026/06/28     15:45              0 hello_world.txt                                                                  
 
 
+PS C:\Users\user\git_challenge> Set-Content hello_world.txt "Hello, world!" -Encoding utf8
+PS C:\Users\user\git_challenge> Get-Content hello_world.txt
+Hello, world!
 PS C:\Users\user\git_challenge> git add hello_world.txt
 PS C:\Users\user\git_challenge> git commit -m "1回目のコミット"
-[main (root-commit) 2d69706] 1回目のコミット
+[main (root-commit) cb2bca5] 1回目のコミット
  1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
+PS C:\Users\user\git_challenge> Add-Content hello_world.txt "こんにちは、世界！" -Encoding utf8
+PS C:\Users\user\git_challenge> Get-Content hello_world.txt
+Hello, world!
+こんにちは、世界！
 PS C:\Users\user\git_challenge> git add hello_world.txt
 PS C:\Users\user\git_challenge> git commit -m "2回目のコミット"
-[main 8ff1603] 2回目のコミット
- 1 file changed, 2 insertions(+), 1 deletion(-)
-PS C:\Users\user\git_challenge> git log
-commit 8ff1603f51e3b3fecff2def172adf643a125209b (HEAD -> main)
-Author: gh-20program26 <uu4883765@gmail.com>
-Date:   Sun Jun 28 15:32:34 2026 +0900
-
-    2回目のコミット
-
-commit 2d69706f5f3929e6789d13010d930fe830604113
-Author: gh-20program26 <uu4883765@gmail.com>
-Date:   Sun Jun 28 15:31:18 2026 +0900
-
-    1回目のコミット
+[main 3f5be72] 2回目のコミット
+ 1 file changed, 1 insertion(+)
+PS C:\Users\user\git_challenge> git log --oneline
+3f5be72 (HEAD -> main) 2回目のコミット
+cb2bca5 1回目のコミット
